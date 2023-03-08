@@ -1,0 +1,372 @@
+html
+{
+    scroll-behavior:smooth;
+}
+body
+{
+    margin: 0;
+    font-family: 'Assistant', sans-serif;
+    background-color: lightgray;
+    color: #181823;
+}
+
+#Header
+{
+    display: inline-block;
+    position:fixed;
+    height : 4rem;
+    width: 100%;
+    top: 0;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.headerText
+{
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+}
+
+
+.headerText > h2 > a
+{
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 0px 10px;
+    margin: 1rem;
+    border-radius: 10px;
+    text-decoration-line: none;
+    font-weight:bold;
+    font-family: 'Assistant', sans-serif;
+}
+
+.headerText > h1
+{
+    color: white;
+    font-family: 'Chonburi', cursive;
+    display: inline-block;
+    position: relative;
+    padding: 0px 10px;
+    margin: 1rem;
+    border-radius: 10px;
+    text-decoration-line: none;
+    font-size: 40px;
+}
+
+
+.headerText > h2 > a:hover
+{
+    transition: all 0.5s ease-in-out;
+    background-color: #D3D3D3;
+}
+
+.rightHeaderText
+{
+    position: absolute;
+    right: 0;
+}
+
+.leftHeaderText
+{
+    position: absolute;
+    left: 0;
+}
+
+.middleHeaderText
+{
+    position: absolute;  
+    left: 50%; 
+    transform: translate(-50%);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #4C4E52;
+}
+#Home
+{
+    padding-top: 4rem;
+    height: 802px;
+    background  : linear-gradient(black, navy);
+}
+#CityPictureLeft, #CityPictureRight
+{
+    position:absolute;
+    bottom: 0px;
+    width: 50%;
+}
+#CityPictureRight
+{
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.HomeAnimationHolder{
+    display: flex;
+    height: 520px;
+    align-items: center;
+    justify-content: center;
+}
+.HomeText{
+    font-size: 90px;
+    text-transform: uppercase;
+}
+.HomeTitle1, .HomeTitle2, .HomeTitle3
+{
+    font-family: 'Assistant', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: auto;
+    color: white;
+}
+.HomeTitle1
+{
+    position: relative;
+    top: 118px;
+    animation: openclose1 8s ease-in-out infinite;
+}
+.HomeTitle2
+{
+    animation: openclose2 8s ease-in-out infinite;
+}
+.HomeTitle3{
+    position: relative;
+    bottom: 118px;
+    animation: openclose3 8s ease-in-out infinite;
+}
+
+@keyframes openclose1 {
+0% {
+    width: 0;
+}
+4%{
+    width: 0;
+}
+16% {
+    width: 1020px;
+}
+31% {
+    width: 1020px;
+}
+34% {
+    width: 0;
+}
+100%
+{
+    width: 0;
+}
+}
+
+@keyframes openclose2 {
+0% {
+    width: 0;
+}
+39%{
+    width: 0;
+}
+50% {
+    width: 970px;
+}
+65% {
+    width: 970px;
+}
+68% {
+    width: 0;
+}
+100% {
+    width: 0;
+}
+}
+
+@keyframes openclose3 {
+0% {
+    width: 0;
+}
+73%{
+    width: 0;
+}
+83% {
+    width: 920px;
+}
+96% {
+    width: 920px;
+}
+100% {
+    width: 0;
+}
+}
+
+#Skills{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    margin: 80px 0 50px 0;
+}
+
+.SkillsTitle
+{
+    text-align: center;
+    font-size: 80px;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.SkillsTitle > h1
+{
+    margin: 0;
+}
+
+.SkillsTable
+{
+    border-collapse: collapse;
+    margin: auto;
+    width: 70%;
+}
+.SkillsTable > tbody > tr
+{
+    height: 320px;
+}
+.SkillsTable > tbody > tr > td{
+    text-align: center;
+}
+
+.SkillsTable > tbody > tr > td > img{
+    width: 150px;
+    margin: 50px 50px;
+}
+
+.SkillsTable > tbody > tr > td > img:hover{
+    transition: all 0.5s ease-in-out;
+    width: 210px;
+    margin: 0px 0px;
+}
+.office
+{
+    position: relative;
+    right: 18px;
+}
+.TallImg:hover
+{
+    width: 210px;
+    margin: 0px 0px;
+}
+
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    margin: 30px 10%;
+}
+
+hr:after {
+    background: lightgray;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+#Projects
+{
+    padding-top: 40px;
+    margin: 20px 0 50px 0;
+    text-align: center;
+}
+
+#Projects h1
+{
+    text-align: center;
+    font-size: 80px;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+.ProjectsTable
+{
+    margin: auto;
+    width: 70%;
+}
+.ProjectsTable > tbody > tr
+{
+    height: 500px;
+}
+
+.ProjectsTable td
+{
+    text-align: center;
+    width: 35%;
+}
+.ProjectsTable img
+{
+    height: 350px;
+    margin: 0 75px;
+    border: 2px solid black;
+}
+.ProjectsTable img:hover{
+    transition: all 0.5s ease-in-out;
+    height: 400px;
+    margin: auto;
+    padding: 0;
+}
+
+.Footer
+{
+    display: flex;
+    background-color: white;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgHolder
+{
+    margin: 0 10px;
+}
+.imgHolder a img
+{
+    padding: 0 10px;
+    height: 30px;
+}
+.imgHolder a img:hover
+{
+    padding: 0 5px;
+    height: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ProjectTitle
+{
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+#carousel
+{
+    padding: 3% 10%;
+    padding-top: 1%;
+    margin: 0 10%;
+}
+
+.carousel-item img
+{
+    height: 750px;
+}
+
+
+
