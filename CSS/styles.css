@@ -97,7 +97,7 @@ body
 #Home
 {
     padding-top: 4rem;
-    height: 802px;
+    height: 100vh;
     background  : linear-gradient(black, navy);
 }
 #CityPictureLeft, #CityPictureRight
